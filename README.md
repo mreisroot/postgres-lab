@@ -11,7 +11,7 @@ Neste projeto, um serviço é criado pelo Docker Compose para fornecer um ambien
 ## Pré-Requisitos
 
 * [Tenha o Docker instalado em seu sistema](https://docs.docker.com/get-docker/)
-* Bourne Shell (/bin/sh), Bash, ou algum outro shell compatível com o Bourne Shell
+* Acesso ao Bourne Shell (/bin/sh), Bash, ou a algum outro shell compatível com o Bourne Shell
 
 ---
 
@@ -29,7 +29,7 @@ No arquivo [compose.yml](./compose.yml), há a definição dos seguintes element
 
 ### Menu interativo
 
-A forma mais fácil de utilizar o projeto é através do menu interativo implementado no script [lab.sh](./lab.sh), que utiliza as funções definidas no arquivo [funcoes.sh](,/funcoes.sh)
+A forma mais fácil de utilizar o projeto é através do menu interativo implementado no script [lab.sh](./lab.sh), que utiliza as funções definidas no arquivo [funcoes.sh](,/funcoes.sh).
 
 Para acessar o menu interativo, digite em um terminal UNIX/Linux:
 
