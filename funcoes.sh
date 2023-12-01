@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Função para criar a pasta de queries e subir o serviço do container postgres-lab
 subir() {
