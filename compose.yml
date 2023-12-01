@@ -1,0 +1,29 @@
+---
+services:
+  db:
+    container_name: "postgres-lab"
+    image: "postgres"
+    restart: "always"
+    attach: false
+    environment:
+      POSTGRES_PASSWORD: "123Mudar"
+    working_dir: "/root"
+    volumes:
+      - type: "bind"
+        source: "./queries"
+        target: "/root/queries"
+      - type: "volume"
+        source: "db-data"
+        target: "/var/lib/postgresql/data"
+    networks:
+      - "db-network"
+
+volumes:
+  db-data:
+    name: "postgres-lab-data"
+
+networks:
+  db-network:
+    name: "postgres-lab-network"
+    driver: "bridge"
+...
