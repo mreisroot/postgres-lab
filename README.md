@@ -8,13 +8,20 @@ Neste projeto, um serviço é criado pelo Docker Compose para fornecer um ambien
 
 ---
 
+## Pré-Requisitos
+
+* [Tenha o Docker instalado em seu sistema](https://docs.docker.com/get-docker/)
+* Bourne Shell (/bin/sh), Bash, ou algum outro shell compatível com o Bourne Shell
+
+---
+
 ## Compose file
 
 No arquivo [compose.yml](./compose.yml), há a definição dos seguintes elementos:
 
-* services.db: O serviço que contém a definição do container postgres-lab
-* volumes.db-data: O volume que será utilizado pelo container postgres-lab para armazenar dados do banco de dados
-* networks.db-network: A rede privada na qual o container está conectado
+* `services.db`: O serviço que contém a definição do container postgres-lab
+* `volumes.db-data`: O volume que será utilizado pelo container postgres-lab para armazenar dados do banco de dados
+* `networks.db-network`: A rede privada na qual o container está conectado
 
 ---
 
