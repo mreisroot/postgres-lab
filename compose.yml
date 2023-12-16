@@ -2,7 +2,7 @@
 services:
   db:
     container_name: "postgres-lab"
-    image: "postgres"
+    image: "postgres:alpine"
     restart: "always"
     attach: false
     environment:
